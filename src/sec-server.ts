@@ -90,10 +90,4 @@ app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
   });
 });
 
-const PORT = process.env.PORT || 3002;
-app.listen(PORT, () => {
-  console.log(`SEC Financial Agent listening on port ${PORT}`);
-  console.log(`Health check: http://localhost:${PORT}/health`);
-});
-
 export default app;
