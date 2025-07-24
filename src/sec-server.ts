@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 // Create the SEC research agent instance
 const secAgent = createSECAgent({
   speakerUri: 'tag:openfloor-research.com,2025:sec-agent',
-  serviceUrl: process.env.SERVICE_URL || 'http://localhost:8080',
+  serviceUrl: process.env.SERVICE_URL || 'https://wzy3kbgcpr.us-east-1.awsapprunner.com/',
   name: 'SEC Financial Analyst',
   organization: 'OpenFloor Demo Corp'
 });
